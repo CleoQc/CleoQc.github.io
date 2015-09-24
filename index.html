@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nicole Parrot | Geek of all Trades</title>
+
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather|Pacifico' rel='stylesheet' type='text/css'> 
+
+		<!-- icon fonts -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">	
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!-- Put your stylesheet below here -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuclick   = $('nav ul a');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(menuclick).on('click', function(e) {
+				e.preventDefault();
+				var w = $(window).width();
+				if (w < 530) { menu.slideUp();}
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	});
+	</script>
+
+		
+	</head>
+	<body>
+		<!-- HEADER -->
+		<nav class="clearfix menu">
+			<ul >
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Work Experience</a></li>
+				<li><a href="#firstcareer">First Career</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<a href="#" id="pull">Menu</a>
+		</nav>
+		<a class="download" href="resume.pdf" download>Download resume (pdf)</a>
+ 
+		
+		<header>
+			<h1>Nicole Parrot</h1>
+			<h2>multi-faceted techie and mom</h2>
+		</header>
+		<!-- ABOUT ME / PROFILE -->
+		<section class="profile" id="about">
+			<div class="content-wrap clearfix">
+				<img class="profile-image" src="images/moi.jpg" alt="Nicole Parrot">
+				<div class="summary">
+					<h2>Welcome!</h2>
+					<p>From an industrial engineering background, to a decade of professional experience as a software developer, and years of homeschooling experience, I can bring a varied set of tools to your projects.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- WORK EXPERIENCE -->
+		<section class="work-experience" id="experience">
+			<div class="content-wrap clearfix" ><!-- new content wrap div -->
+				<h2>Work Experience</h2>
+
+				<div class="item clearfix" >
+					<div class="details">
+						<h4 class="company"><a href="http://fabule.com/clyde/" target="_blank">Fabule Fabrication</a></h4>
+						<!--<p><a href="http://fabule.com/clyde/" target="_blank"><img src="images/fabule.png"></a></p>-->
+						<h3>Tutorial Writer</h3>
+						<p class="date">August 2014 - December 2014</p>
+					</div>
+					<div class="description">
+						<p><strong>Tutorial Writer:</strong> I wrote up several beginner oriented tutorials on how to control Clyde, an Arduino-based lamp, including how to connect it to the Arduino IDE to change the programming, connecting it to other devices using Xbee connections, and controlling the ambient colors through jelly bean candy.</p>
+					</div>
+				</div><!-- close .item -->
+
+				<div class="item clearfix">
+					<div class="details">
+						<h4 class="company">The Learning Tree Co-op</h4>
+						<h3>Teacher</h3>
+						<p class="date">September 2011 - Present</p>
+					</div>
+					<div class="description">
+						<p>Teaching homeschool children in a classroom setting. Subjects varied from French as a second language, to Scratch programming, NXT Robotics, and Python</p>
+					</div>
+				</div><!-- close .item -->
+
+				<div class="item clearfix">
+					<div class="details">
+						<h4 class="company">West Island Alternative Learning Centre</h4>
+						<h3>Coordinator and Teacher</h3>
+						<p class="date">September 2010 - Present</p>
+					</div>
+					<div class="description">
+						<p>Scheduling a full day of classes for each of the students attending the centre. Classes cover French as a Second Language, Canadian History, Logic, arts, singing, science labs.</p>
+					</div>
+				</div>
+				<div class="item clearfix">
+					<div class="details">
+						<h4 class="company">Jesus Light of the World Parish</h4>
+						<h3>Administrative Assistant</h3>
+						<p class="date">September 2011 - September 2012</p>
+					</div>
+					<div class="description">
+						<p>Ensuring the parish ran smoothly</p>
+						
+						<p>Key contributions:</p>
+						<ul>
+							<li>Creating the weekly church bulletin</li>
+							<li>Rental manager</li>
+							<li>Buyer for all relevant supplies</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+			</div>
+		</section>
+
+		<!-- FIRST CAREER -->
+		<section class="firstcareer" id="firstcareer">
+			<div class="content-wrap clearfix" ><!-- new content wrap div -->
+				<h2>First Career</h2>
+				<div class="item clearfix" >
+					<div class="details">
+						<h4>Freelancer</h4>
+						<p class="date">1998 - 2003</p>
+					</div>	
+           			<div class="description">
+						(please note that none of these websites still exist in their original format due to the fleeting nature of the Web)
+						<ul>
+							<li>Biztrek Partner (Australia).</li>
+							<li>Search engine creation Éditions Sur Scène (Surscene.qc.ca)(ASP, Access)</li>
+							<li>Intranet work for Fédération des Cégeps. (ASP, Access, VBScript, IIS 4.0)</li>
+							<li>Parental email control for Zeeks LLC (www.zeeks.com) (C++, C, ASP, VBscript, MS SQL, Rockliffe Mailsite, IIS 4.0)</li>
+							<li>Shopping cart for AustralianFlowers.</li>
+							<li>Tools and applets for Mailsite (Email server) Rockliffe</li>
+							<li>TheForce.net  tech lead, and forum administrator.</li>
+						</ul>
+					    
+					</div>
+				</div>
+
+				<div class="item clearfix" >
+					<div class="details">
+						<h4 class="company">Softimage / Microsoft</h4>
+						<h3>Software Development Engineer</h3>
+						<p class="date">May 1994 - November 1998</p>
+					</div>
+					<div class="description">
+						<ul>
+							<li>Soft|3D and XSI development. Member of the UI team.(C C++ COM Unix Windows OpenGL).</li>
+							<li>Group Leader 1995-1997.</li>
+							<li>NT Port team member. Microsoft/Redmond and Montréal.</li>
+							<li>Maintenance and dev work on Soft|3D on both Windows and Irix (SGI)</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+				<div class="item clearfix" >
+					<div class="details">
+						<h4 class="company">Virtual Prototypes Inc (now called Presagis)</h4>
+						<h3>Software Development Engineer</h3>
+						<p class="date">May 1991 – April 1994 </p>
+					</div>
+					<div class="description">
+						<ul>
+							<li>User interface specialist.</li>
+							<li>Project lead on Stateform Editor 3.1</li>
+							<li>Consultation work for VPI's clients on their user interface design.</li>
+							<li>Design of highway surveillance system interface. Arizona Department of Transportation, Phoenix, Arizona (1993)</li>
+							<li>Consultation work for IBM Rockville, Maryland, on Air Traffic Control (1991).</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+				<div class="item clearfix" >
+					<div class="details">
+						<h4 class="company">La Société Désig Inc.</h4>
+						<h3>Software Development Engineer</h3>
+						<p class="date">Dec 1989- May 1991 </p>
+					</div>
+					<div class="description">
+						<ul>
+							<li>Lead programmer for their Hotel Management System, including the bookkeeping software.</li>
+							<li>Support hotline.</li>
+							<li>Supervision of the translation effort to Spanish, for both software and written documentation. Presentation in Spanish, Tecnotur 90, La Havane, Cuba.</li>
+						</ul>
+					</div>
+				</div><!-- close .item -->
+			</div>
+		</section>
+		<!-- SKILLS -->
+		<section class="skills" id="skills">
+			<div class="content-wrap clearfix"><!-- new content wrap div -->
+				<h2>Skills</h2>
+
+				<div class="skills-list clearfix">
+					<!--<h3>List Option / Title</h3>-->
+
+					<div class="columns">
+						<h4>Best at:</h4>
+						<ul>
+							<li><i class="fa fa-check-square"></i>&nbsp;C / C++</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;Presenting</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;Teaching / Mentoring</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;Learning New Technologies</li>
+
+						</ul>
+					</div>
+
+					<div class="columns">
+						<h4>Worked with:</h4>
+						<ul>
+							<li><i class="fa fa-check-square"></i>&nbsp;Python</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;Wordpress</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;HTML / CSS</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;PHP / ASP / Perl</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;Arduino / Raspberry Pi</li>
+
+						</ul>
+					</div>
+
+					<div class="columns">
+						<h4>Learning:</h4>
+						<ul>
+							<li><i class="fa fa-check-square"></i>&nbsp;Django</li>	
+							<li><i class="fa fa-check-square"></i>&nbsp;MongoDb</li>
+							<li><i class="fa fa-check-square"></i>&nbsp;Git / GitHub</li>	
+							<li><i class="fa fa-check-square"></i>&nbsp;Data Wrangling</li>	
+						</ul>
+					</div>	
+				</div><!-- close .skills-list -->
+
+				<div class="clear-fix skills-circles">
+					<h2>Volunteer Work</h2>
+
+					<ul>
+						<li class="skill-circle skill-anim">
+						<a href="http://osjwi.qc.ca" target="_blank">
+							<span>West Island Youth Orchestra</span>
+						    <div class="mask">
+							    <h4>Board Member</h4>
+							    <p>2011-2013</p>
+						    </div> 
+						</a>    
+						</li>  			
+						<li class="skill-circle skill-anim">
+							<a href="http://ladieslearningcode.com/chapters/montreal/"  target="_blank">
+							<span>Ladies Learning Code</span>
+							<div class="mask">  
+							     <h4>Mentor</h4>  
+							     <p>2014-15</p>  
+						     </div>
+						 	</a>
+						 </li>
+						<li class="skill-circle skill-anim">
+						<a href="http://www.pyladies.com" target="_blank">
+							<span>PyLadies</span>
+							<div class="mask">  
+							     <h4>Attendee</h4>  
+							     <p>2014-2015</p>  
+						     </div>
+						</a></li>
+ 						     
+						<li class="skill-circle skill-anim">
+						<a href="https://us.pycon.org/2015/" target="_blank">
+							<span>Pycon</span>
+							<div class="mask">  
+							     <h4>Young Coders</h4>  
+							     <p>2014 & 2015</p>  
+						     </div>
+						</a>
+						</li>
+						<li class="skill-circle skill-anim">
+						<a href="http://escadron830.com" target="_blank">
+							<span>Cadets de l'Air - Escadron 830</span>
+							<div class="mask">  
+							     <h4>Board Member</h4>  
+							     <p>2011-2014</p>  
+						     </div>
+						</a></li>
+					</ul>
+				</div><!-- close .skills-circles -->
+			</div>
+		</section>
+
+
+		<!-- EDUCATION -->
+		<section class="education" id="education">
+			<div class="content-wrap  clearfix"><!-- new content wrap div -->
+				<h2>Education</h2>
+
+				<div class="item">
+					<h3>École Polytechnique de Montréal, 1989</h3>
+					<h4>Industrial Engineering, specialization in Computer Science</h4>
+					<p>The specialization was in generic Computer Science, but also in Robotics, and User Interface design from a cognitive ergonomics point of view.</p>
+				</div>
+				<div class="item">
+					<h3>McGill University, Physics, 1984-1985</h3>
+					<h4>First Year</h4>
+					<p></p>
+				</div>
+				<div class="item">
+					<h3>CEGEP Brébeuf, 1982-1984</h3>
+					<h4>D.E.C Pure and Applied Sciences</h4>
+					<p></p>
+				</div>
+				<div class="item">
+					<h3>College Ste-Marcelline, 1982</h3>
+					<h4>High School diploma</h4>
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT INFO -->
+		<section class="contact" id="contact">
+			<div class="content-wrap  clearfix"><!-- new content wrap div -->
+				<h2>Let's keep in touch!</h2>
+
+				<div class="social">
+					<a href="https://twitter.com/Cleo_Qc" title="Twitter"><i class="fa fa-twitter"></i></a>
+					<!--<a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+					<a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>-->
+					<a href="https://github.com/cleoqc" title="Github"><i class="fa fa-github-alt"></i></a>
+					<a href="http://cleoqc.wordpress.com" title="Wordpress"><i class="fa fa-wordpress"></i></a>
+					<!--<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<a href="#" title="Google+"><i class="fa fa-google-plus"></i></a>-->
+				</div>
+			
+				<p><a href="mailto:nicole@parrot.ca">nicole@parrot.ca</a></p>
+
+				<footer>
+					<p class="copyright">Copyright &#169; 2015 by Nicole Parrot</p>
+				</footer>
+			</div>
+		</section>
+	<!-- jQuery starts here -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Flexslider file -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script>
+    $(document).ready(function(){
+        // Add all jQuery code here.
+        $('.flexslider').flexslider({ animation : "slide",animationSpeed : 2000  });
+        $(".fav-img").width(200);
+    });
+	$(".fav-img").click(function(){ 
+	    //console.log("It works!");
+	    $(this).hide(1000).show('fast').fadeOut('slow').fadeIn(5000).slideUp(800).slideDown(10000);
+	});
+	$(".menu a").click(function(){
+ 	   //console.log("It works!");
+ 	   $(".active").removeClass("active");
+ 	   $(this).addClass("active");
+	});
+	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+	        if (target.length) {
+	            $('html,body').animate({
+	              scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	        }
+	   	}
+	});
+	</script>
+	</body>
+</html>
